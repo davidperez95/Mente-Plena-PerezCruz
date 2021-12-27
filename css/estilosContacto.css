@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lexend Tera', sans-serif;
+    background-color: #b7e4c7;
+}
+
+/* inicio header */
+
+.header{
+    background-image: url(../multimedia/img/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    word-spacing: 35px;
+    letter-spacing: 20px;
+    font-style: normal;
+    color: #000;
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 400;
+    }
+
+/* inicio navegador */
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #12522c;
+}
+
+/* inicio formulario */
+
+/* inicio footer */
+
+#foot{
+    display: inline-block;
+    word-spacing: 50px;
+}
+
+.foot__logo--estilos{
+    height: 100px;
+}
+
+/* inicio media queris */
+
+@media only screen and (min-width:350px) and (max-width:710px){
+    ul{
+        display: inline-block;
+    }
+}

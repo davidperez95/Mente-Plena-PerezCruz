@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lexend Tera', sans-serif;
+    background-color: #b7e4c7;
+}
+
+/* inicio header */
+
+.header{
+    background-image: url(../multimedia/img/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    word-spacing: 35px;
+    letter-spacing: 20px;
+    font-style: normal;
+    color: #000;
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 400;
+    }
+
+/* inicio navegador */
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #12522c;
+}
+
+/* inicio seccion */
+
+.titulo__entrada{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.entrada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.articulo{
+    text-align: justify;
+    font-weight: 200;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.video--estilo{
+    grid-column: 1/2;
+    padding-left: 20px;
+}
+
+/* inicio footer */
+
+#foot{
+    display: inline-block;
+    word-spacing: 50px;
+}
+
+.foot__logo--estilos{
+    height: 100px;
+}
+
+/* inicio media queris */
+
+@media only screen and (min-width:790px) and (max-width:930px){
+    .video--estilo{
+        height: 215px;
+        width: 360px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:789px){
+    .header{
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    ul{
+        display: inline-block;
+    }
+    
+    .entrada{
+        grid-template-columns: 1fr;
+    }
+
+    .video--estilo{
+        height: 150px;
+        width: 350px;
+    }
+
+    .articulo{
+        padding-top: 20px;
+    }
+}   

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosContacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header class="header">
+    
+        <!-- <img class="logo" src="multimedia/img/logo sin fondo.png" alt=""> -->
+    
+        <h1>Mente Plena</h1>
+
+        <nav class="navegador">
+
+            <ul class="lista">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="quienesSomos.html">Quienes somos</a></li>
+                <li class="item"><a href="servicios.html">Servicios</a></li>
+                <li class="item"><a href="blog.html">Blog</a></li>
+                <li class="item"><a href="contacto.html">Contacto</a></li>
+                <li class="item"><a href="pagos.html">Zona Pagos</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+
+        <label for="nombre">Nombre</label> 
+        <input type="text" name="nombre" required placeholder="Como te llamas"> <br>
+
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" required placeholder="cuantos años tienes"> <br>
+
+        <h3>Selecciona tu genero</h3>
+
+        <select name="sexos" id="">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+        </select> <br>
+
+        <label for="otro">Si seleccionaste otro, especifica cual</label> <br>
+        <input type="text" placeholder="con que genero te identificas"> <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required placeholder="Escribe tu email"> <br>
+
+        <label for="telefono">Telefono</label>
+        <input type="text" required placeholder="Dejanos tu contacto"> <br> <br>
+
+        <label for="areadetexto">Espacio para que nos escribas</label> <br>
+        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Dejanos tu duda y nos contactaremos contigo"></textarea> <br>
+
+        <h3>Escoge el medio por el cual quieres que te contactemos</h3>
+
+        <label for="medio1">Email</label>
+        <input type="checkbox"> <br>
+
+        <label for="medio2">Telefono</label>
+        <input type="checkbox"> <br> <br>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+
+        <h2>Nos contactaremos contigo lo mas pronto posible</h2>
+
+    </form>
+
+    <footer id="foot">
+
+        <img class="foot__logo--estilos" src="multimedia/img/logo cuadrado.jpeg" alt="">
+        <span>REDES SOCIALES</span>
+        <a href="contacto.html">CONTACTO</a>
+        Mente Plena WEB &copy; 2021
+
+    </footer>
+
+    
+</body>
+</html>
