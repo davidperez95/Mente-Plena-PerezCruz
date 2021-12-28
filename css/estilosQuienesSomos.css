@@ -11,13 +11,16 @@ html{
 
 body{
     font-family: 'Lexend Tera', sans-serif;
-    background-color: #b7e4c7;
+    background-image: url(../multimedia/img/waves.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* inicio header */
 
 .header{
-    background-image: url(../multimedia/img/fondo1.jpg);
+    /* background-image: url(../multimedia/img/fondo1.jpg); */
     background-position: center;
     background-size: cover;
     height: auto;
@@ -113,12 +116,20 @@ a:hover{
 /* inicio footer */
 
 #foot{
-    display: inline-block;
-    word-spacing: 50px;
+    display: block;
+    word-spacing: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span i{
+    font-size: 40px;
+    color: #12522c;
 }
 
 .foot__logo--estilos{
-    height: 100px;
+    height: 150px;
+    width: auto;
 }
 
 /* inicio media queris */
