@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilosContacto.css">
     <title>Contacto</title>
 </head>
@@ -30,57 +32,78 @@
 
     </header>
 
-    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" class="form">
 
-        <label for="nombre">Nombre</label> 
-        <input type="text" name="nombre" required placeholder="Como te llamas"> <br>
+        <label class="label" for="nombre">Nombre</label> 
+        <input class="input" type="text" name="nombre" required placeholder="Como te llamas"> <br>
 
-        <label for="edad">Edad</label>
-        <input type="number" name="edad" required placeholder="cuantos años tienes"> <br>
+        <label class="label" for="edad">Edad</label>
+        <input class="input" type="number" name="edad" required placeholder="cuantos años tienes"> <br>
 
         <h3>Selecciona tu genero</h3>
 
-        <select name="sexos" id="">
-            <option value="hombre">Hombre</option>
-            <option value="mujer">Mujer</option>
-            <option value="otro">Otro</option>
+        <select name="sexos" id="select">
+            <option class="select__option" value="hombre">Hombre</option>
+            <option class="select__option" value="mujer">Mujer</option>
+            <option class="select__option" value="otro">Otro</option>
         </select> <br>
 
         <label for="otro">Si seleccionaste otro, especifica cual</label> <br>
-        <input type="text" placeholder="con que genero te identificas"> <br> <br>
+        <input class="input" type="text" placeholder="con que genero te identificas"> <br> 
 
-        <label for="email">Email</label>
-        <input type="email" name="email" required placeholder="Escribe tu email"> <br>
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" name="email" required placeholder="Escribe tu email"> <br>
 
-        <label for="telefono">Telefono</label>
-        <input type="text" required placeholder="Dejanos tu contacto"> <br> <br>
+        <label class="label" for="telefono">Telefono</label>
+        <input class="input" type="text" required placeholder="Dejanos tu contacto"> <br>
 
-        <label for="areadetexto">Espacio para que nos escribas</label> <br>
-        <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Dejanos tu duda y nos contactaremos contigo"></textarea> <br>
+        <label class="label" for="areadetexto">Espacio para que nos escribas</label> <br>
+        <textarea class="text__area" name="areadetexto" id="" cols="30" rows="5" placeholder="Dejanos tu duda y nos contactaremos contigo"></textarea> <br>
 
-        <h3>Escoge el medio por el cual quieres que te contactemos</h3>
+        <h3>Escoge el medio por el cual deseas que te contactemos</h3>
 
-        <label for="medio1">Email</label>
-        <input type="checkbox"> <br>
+        <div class="checkbox">
 
-        <label for="medio2">Telefono</label>
-        <input type="checkbox"> <br> <br>
+            <label class="label item1" for="medio1">Email</label>
+            <input class="input item2" type="checkbox"> 
 
-        <input type="submit" value="enviar">
-        <input type="reset" value="borrar">
+            <label class="label item3" for="medio2">Telefono</label>
+            <input class="input item4" type="checkbox"> 
+
+        </div>   
+
+            <input class="submit" type="submit" value="Enviar">
+            <input class="submit" type="reset" value="Borrar">
 
         <h2>Nos contactaremos contigo lo mas pronto posible</h2>
 
     </form>
 
-    <footer id="foot">
+    <footer data-aos="fade-down" id="foot">
 
-        <img class="foot__logo--estilos" src="multimedia/img/logo cuadrado.jpeg" alt="">
-        <span>REDES SOCIALES</span>
-        <a href="contacto.html">CONTACTO</a>
+        <span>
+
+            <a href="https://www.instagram.com/menteplena_col/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=573203778503&text&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:jjp1394@gmail.com?Subject=Interesado%20en%20sus%20servicios"><i class="far fa-envelope"></i></a>
+
+        </span>
+
+        <br>
+
         Mente Plena WEB &copy; 2021
 
+        <br>
+
+        <img class="foot__logo--estilos" src="multimedia/img/logo sin fondo.png" alt="">
+
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     
 </body>

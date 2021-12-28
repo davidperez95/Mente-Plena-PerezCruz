@@ -67,7 +67,10 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 20px;
+}
+
+.seccion__profesional--margen{
+    margin-top: 20px;
 }
 
 .presentacion{
@@ -85,6 +88,16 @@ a:hover{
 .img__retrato{
     height: 300px;
     width: 300px;
+    border-radius: 50%;
+}
+
+#t1{
+    transition: all 0.5s;
+}
+
+#t1:hover{
+    height: 320px;
+    width: 320px;
 }
 
 /* inicio grids areas */
