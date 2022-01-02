@@ -6,81 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilosServicios.css">
     <title>Servicios</title>
 </head>
 <body>
 
-    <header class="header">
+    <h1 class="text-center">Mente Plena</h1>
+
+    <!-- Header con navbar -->
     
-        <!-- <img class="logo" src="multimedia/img/logo sin fondo.png" alt=""> -->
-    
-        <h1>Mente Plena</h1>
+    <header class="container-fluid">
 
-        <nav class="navegador">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler btn-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul class="lista">
-                <li class="item"><a href="index.html">Home</a></li>
-                <li class="item"><a href="quienesSomos.html">Quienes somos</a></li>
-                <li class="item"><a href="servicios.html">Servicios</a></li>
-                <li class="item"><a href="blog.html">Blog</a></li>
-                <li class="item"><a href="contacto.html">Contacto</a></li>
-                <li class="item"><a href="pagos.html">Zona Pagos</a></li>
-            </ul>
-
-        </nav>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="pagos.html">Zona Pagos</a>
+                </li>  
+              </ul>
+            </div>  
+          </nav>
 
     </header>
 
-    <section data-aos="fade-down" class="seccion__servicio">
+    <!-- seccion 1 -->
 
-        <img id="t1" class="img__servicio item1" src="multimedia/img/persona.jpg" alt="">
+    <section class="container" data-aos="fade-down">
 
-        <article class="descripcion item2">
+        <section class="row text-center">
+        
+            <div class="col-lg-6">
 
-            <h3>Nombre del servicio</h3>
+                <img id="t1" src="multimedia/img/persona.jpg" alt="">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam alias labore animi culpa odit perspiciatis excepturi. Illum voluptates vitae deleniti placeat porro, aliquid id mollitia quos quas maxime at voluptatum?</p>
+                <h3>Servicio</h3>
 
-        </article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis autem ad error a harum adipisci, commodi cupiditate voluptatem, sunt enim distinctio nihil assumenda praesentium libero! Inventore expedita non consequuntur ab.</p>
 
-        <img id="t1" class="img__servicio item3" src="multimedia/img/grupo.jpg" alt="">
+            </div>
 
-        <article class="descripcion item4">
+            <div class="col-lg-6">
 
-            <h3>Nombre del servicio</h3>
+                <img id="t1" src="multimedia/img/grupo.jpg" alt="">
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, perferendis. Unde atque esse placeat nulla nemo asperiores repellendus dolorem sapiente dicta dolorum! Minus pariatur aspernatur ullam officiis placeat harum recusandae!</p>
+                <h3>Servicio</h3>
 
-        </article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, amet. Tenetur eius sed vitae minus odit et nulla sunt corporis. Ipsam deserunt quis quae? Nam pariatur molestiae commodi accusamus obcaecati!</p>
 
-    </section>
+            </div>
 
-    <section data-aos="fade-down" class="seccion__servicio">
-
-        <img id="t1" class="img__servicio item1" src="multimedia/img/persona.jpg" alt="">
-
-        <article class="descripcion item2">
-
-            <h3>Nombre del servicio</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam alias labore animi culpa odit perspiciatis excepturi. Illum voluptates vitae deleniti placeat porro, aliquid id mollitia quos quas maxime at voluptatum?</p>
-
-        </article>
-
-        <img id="t1" class="img__servicio item3" src="multimedia/img/grupo.jpg" alt="">
-
-        <article class="descripcion item4">
-
-            <h3>Nombre del servicio</h3>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, perferendis. Unde atque esse placeat nulla nemo asperiores repellendus dolorem sapiente dicta dolorum! Minus pariatur aspernatur ullam officiis placeat harum recusandae!</p>
-
-        </article>
+        </section>
 
     </section>
 
-    <footer data-aos="fade-down" id="foot">
+    <!-- seccion 2 -->
+
+    <section class="container" data-aos="fade-down">
+
+        <section class="row text-center">
+        
+            <div class="col-lg-6">
+
+                <img id="t1" src="multimedia/img/persona.jpg" alt="">
+
+                <h3>Servicio</h3>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis autem ad error a harum adipisci, commodi cupiditate voluptatem, sunt enim distinctio nihil assumenda praesentium libero! Inventore expedita non consequuntur ab.</p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <img id="t1" src="multimedia/img/grupo.jpg" alt="">
+
+                <h3>Servicio</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, amet. Tenetur eius sed vitae minus odit et nulla sunt corporis. Ipsam deserunt quis quae? Nam pariatur molestiae commodi accusamus obcaecati!</p>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="container text-center" data-aos="fade-down" id="foot">
 
         <span>
 
@@ -92,13 +121,23 @@
 
         <br>
 
-        Mente Plena WEB &copy; 2021
+        <span> Mente Plena WEB &copy; 2021 </span>
 
         <br>
 
-        <img class="foot__logo--estilos" src="multimedia/img/logo sin fondo.png" alt="">
+        <img id="foot__logo" src="multimedia/img/logo sin fondo.png" alt="" width="200" height="200">
 
     </footer>
+
+    <!-- scripts -->
+
+    <!-- scripts bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!-- scripts aos -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
