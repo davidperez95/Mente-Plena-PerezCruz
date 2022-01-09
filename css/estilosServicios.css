@@ -56,6 +56,10 @@ h3{
     color: #000;
 }
 
+.text{
+    text-align: justify;
+}
+
 /* inicio footer */
 
 #foot{
@@ -71,4 +75,13 @@ span i{
 #foot__logo{
     height: 200px;
     width: 200px;
+}
+
+/* inicio de media queri para mobile */
+
+@media only screen and (min-width: 350px) and (max-width: 430px){
+    img{
+        height: 200px;
+        width: 300px;
+    }
 }
