@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;200;400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Lexend Tera", sans-serif;
+  font-family: 'Lexend Tera', sans-serif;
   background-image: url(../multimedia/img/waves.svg);
   background-position: center;
   background-size: cover;
@@ -63,5 +62,4 @@ span i {
   font-size: 40px;
   color: #12522c;
 }
-
 /*# sourceMappingURL=estilos.css.map */

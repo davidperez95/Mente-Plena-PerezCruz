@@ -36,8 +36,8 @@ h1{
 }
 
 img{
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     border-radius: 10%;
     margin-top: 20px;
 }
@@ -47,8 +47,8 @@ img{
 }
 
 #t1:hover{
-    height: 320px;
-    width: 420px;
+    height: 220px;
+    width: 320px;
 }
 
 h3{
@@ -59,6 +59,31 @@ h3{
 .text{
     text-align: justify;
 }
+
+/* button{
+    position: relative;
+    border: 2px solid #12522c;
+    border-radius: 50%;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+button::before,
+button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+} */
+
+.btn{
+    background-color: #70ac82;
+}
+
+/* .btn:hover{
+    border: 2px solid #70ac82;
+    color: #70ac82;
+    background-color: #032b13;
+} */
 
 /* inicio footer */
 
