@@ -17,83 +17,41 @@ body{
     background-repeat: no-repeat;
 }
 
-/* inicio header */
-
-.header{
-    /* background-image: url(../multimedia/img/fondo1.jpg); */
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    text-align: center;
-}
-
-h1 {
-    padding-top: 60px;
-    padding-bottom: 20px;
+h1{
+    margin-top: 20px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
     font-size: 50px;
-    word-spacing: 35px;
-    letter-spacing: 20px;
-    font-style: normal;
-    color: #000;
-    font-family: 'Lexend Tera', sans-serif;
     font-weight: 400;
-    }
+    color: #000;
+}
 
-/* inicio navegador */
+.navbar{
+    text-transform: capitalize;
+    font-size: larger;
+}
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
+.nav-item{
+    margin-left: 20px;
+}
+
+.video{
+    border-radius: 10%;
+}
+
+h2{
     margin-top: 20px;
-    font-weight: 500;
+    color: #000;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover{
-    color: #12522c;
-}
-
-/* inicio seccion */
-
-.titulo__entrada{
-    text-align: center;
-    padding-top: 20px;
-}
-
-.entrada{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.articulo{
+.text{
     text-align: justify;
-    font-weight: 200;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.video--estilo{
-    grid-column: 1/2;
-    padding-left: 20px;
-    border-radius: 20px;
 }
 
 /* inicio footer */
 
 #foot{
-    display: block;
     word-spacing: 20px;
-    text-align: center;
     margin-top: 20px;
 }
 
@@ -102,40 +60,3 @@ span i{
     color: #12522c;
 }
 
-.foot__logo--estilos{
-    height: 150px;
-    width: auto;
-}
-
-/* inicio media queris */
-
-@media only screen and (min-width:790px) and (max-width:930px){
-    .video--estilo{
-        height: 215px;
-        width: 360px;
-    }
-}
-
-@media only screen and (min-width:400px) and (max-width:789px){
-    .header{
-        grid-template-columns: 1fr;
-        width: auto;
-    }
-
-    ul{
-        display: inline-block;
-    }
-    
-    .entrada{
-        grid-template-columns: 1fr;
-    }
-
-    .video--estilo{
-        height: 150px;
-        width: 350px;
-    }
-
-    .articulo{
-        padding-top: 20px;
-    }
-}   

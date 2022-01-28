@@ -6,65 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Mente Plena</title>
 </head>
 <body>
     
-    <header class="header">
+    <h1 class="text-center">Mente Plena</h1>
+
+    <!-- Header con navbar -->
     
-        <!-- <img class="logo" src="multimedia/img/logo sin fondo.png" alt=""> -->
-    
-        <h1>Mente Plena</h1>
+    <header class="container-fluid">
 
-        <nav class="navegador">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler btn-1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul class="lista">
-                <li class="item"><a href="index.html">Home</a></li>
-                <li class="item"><a href="quienesSomos.html">Quienes somos</a></li>
-                <li class="item"><a href="servicios.html">Servicios</a></li>
-                <li class="item"><a href="blog.html">Blog</a></li>
-                <li class="item"><a href="contacto.html">Contacto</a></li>
-                <li class="item"><a href="pagos.html">Zona Pagos</a></li>
-            </ul>
-
-        </nav>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Zona Pagos</a>
+                </li>  
+              </ul>
+            </div>  
+          </nav>
 
     </header>
 
-    <section data-aos="fade-down" class="seccion">
+    <!-- seccion 1 con iframe -->
+
+    <div class="container-fluid" data-aos="fade-down"> 
+
+        <section class="row">      
+
+            <iframe class="col-xs-12 col-sm-5 col-md-4 col-lg-4 video" width="auto" height="300" src="https://www.youtube.com/embed/g6OY_jTsQXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
-        <iframe class="video--estilo" width="560" height="315" src="https://www.youtube.com/embed/g6OY_jTsQXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <article class="col-xs-12 col-sm-7 col-md-8 col-lg-8 text">
 
-        <article class="articulo">
+                <h3 class="text-center">Vivir en el presente</h3>
+                <p>No podríamos vivir sin la capacidad de estar en el presente: es la que nos permite recordar a dónde estamos yendo mientras caminamos, aún cuando durante el trayecto nos hayamos perdido en miles de pensamientos. Sin Mindfulness sería imposible poder observar y reconocer la propia experiencia y vivir en este mundo. Sin embargo, y aunque creemos tener control conciente de nuestra atención, lo que normalmente sucede es que estamos constantemente atendiendo a pensamientos acerca del pasado o del futuro o bien, reconociendo solo una pequeña porción de lo que está sucediendo en el presente: si lo que estoy experimentando me gusta, quiero que continue o si lo que estoy experimentando me desagrada, quiero que desaparezca.
 
-            <h2 class="articulo__titulo--estilo">Nombre del articulo</h2>
+                Mindfulness permite reconocer lo que está sucediendo mientras está sucediendo, aceptando activamente el fluir de la experiencia tal cual se está dando. Así es que, aunque experimentemos algo desagradable (por cierto algo inevitable en la medida en que estemos vivos), podremos ahorrarnos el sufrimiento añadido de tener que lograr que aquello desagradable desaparezca. Quedarse solo con lo que experimentamos sin agregar nada más es lo que la práctica de mindfulness permite.</p>
 
-            <img src="" alt="">
+            </article>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, vitae consectetur sed ipsa architecto molestiae exercitationem magnam dignissimos pariatur dolor numquam explicabo, autem error ipsum? Delectus ipsa nihil debitis distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore fuga exercitationem voluptatibus atque quas quasi, consequatur impedit, ipsam similique delectus pariatur eligendi veritatis molestiae nobis cupiditate consequuntur iure doloribus!</p>
+        </section>
+        
+    </div>
 
-        </article>
+    <!-- seccion 2 nuestros clientes -->
 
-    </section>
+    <section class="container text-center" data-aos="fade-down">
 
-    <section data-aos="fade-down" class="clientes">
+        <h2 class="text-center">Nuestros Clientes</h2>
 
-        <h2 class="clientes__titulo">Nuestros Clientes</h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, id. Soluta nostrum voluptas molestias. Quisquam illum doloribus fugit iste voluptatibus officiis, inventore perspiciatis deleniti nemo nam, quidem ipsam laboriosam veniam?</p>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="./multimedia/img/logo-grupo-bancolombia.png" alt="Bancolombia" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="./multimedia/img/logo-seguros-bolivar.png" alt="Seguros Bolivar" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="./multimedia/img/logo-sencosud.png" alt="Sencosud" width="300" height="300">
+            </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
         
     </section>
 
-    <section data-aos="fade-down" class="clientes">
+    <!-- seccion 3 nuestras opiniones -->
 
-        <h2 class="clientes__titulo">Nuestras Opiniones</h2>
+    <div class="container" data-aos="fade-down">
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quo? Quos accusamus dicta aliquid obcaecati velit dolor vel voluptatum nihil esse, minima repellat, numquam tempora dolorem assumenda doloribus deleniti debitis!</p>
+        <h2 class="text-center">Nuestras Opiniones</h2>
+        
+        <section class="row text">
 
-    </section>
+            <p class="col-md-4">¡Grandes psicólogos! Tienen la capacidad de escucharte y guiarte. Establecen un espacio de seguridad y confianza.</p>
 
-    <footer data-aos="fade-down" id="foot">
+            <p class="col-md-4 lead">Me devolvieron la confianza en el apoyo psicológico después de una primera experiencia poco enriquecedora con otro profesional, el gran diferencial fue que David supo diagnosticar mi situación y brindarme herramientas que me ayudaron mucho en mi proceso,es empático y tiene vocación por lo que hace.</p>
+
+            <p class="col-md-4">Son excelentes profesionales comprometidos con el proceso y muy empaticos, me ayudo mucho en mi proceso.</p>
+
+
+        </section>
+
+    </div>
+
+    <!-- footer -->
+
+    <footer class="container text-center" data-aos="fade-down" id="foot">
 
         <span>
 
@@ -76,13 +140,23 @@
 
         <br>
 
-        Mente Plena WEB &copy; 2021
+        <span> Mente Plena WEB &copy; 2022 </span>
 
         <br>
 
-        <img class="foot__logo--estilos" src="multimedia/img/logo sin fondo.png" alt="">
+        <img class="img-fluid" src="multimedia/img/logo sin fondo.png" alt="" width="200" height="200">
 
     </footer>
+
+    <!-- scripts -->
+
+    <!-- scripts bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!-- scripts aos -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;200;400&display=swap');
 
+// variables
+
+$margin: 10px;
+$color: #000;
+
+//estilos
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +16,8 @@ html{
     scroll-behavior: smooth;
 }
 
+// body
+
 body{
     font-family: 'Lexend Tera', sans-serif;
     background-image: url(../multimedia/img/waves.svg);
@@ -17,32 +26,15 @@ body{
     background-repeat: no-repeat;
 }
 
-/* inicio header */
-
+// titulos
 
 h1{
-    margin-top: 20px;
+    margin: $margin;
     letter-spacing: 10px;
     word-spacing: 30px;
     font-size: 50px;
     font-weight: 400;
-    color: #000;
-}
-
-img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-#t1{
-    transition: all 1s;
-}
-
-#t1:hover{
-    height: 290px;
-    width: 290px;
+    color: $color;
 }
 
 .navbar{
@@ -51,23 +43,35 @@ img{
 }
 
 .nav-item{
-    margin-left: 20px;
+    margin: $margin;
+}
+
+.video{
+    border-radius: 10%;
+}
+
+h2{
+    margin: $margin;
+    color: $color;
 }
 
 h3{
-    margin-top: 20px;
-    color: #000;
+    margin: $margin;
+    color: $color;
+}
+
+.text{
+    text-align: justify;
 }
 
 /* inicio footer */
 
 #foot{
-    margin-top: 20px;
     word-spacing: 20px;
+    margin-top: 20px;
 }
 
 span i{
     font-size: 40px;
     color: #12522c;
 }
-
